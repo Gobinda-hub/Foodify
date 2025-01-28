@@ -5,7 +5,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // config variables
 const currency = "inr";
-const deliveryCharge = 50;
+const deliveryCharge = 80;
 const frontend_URL = 'https://food-delivery-frontend-ip98.onrender.com';
 // const frontend_URL = "http://localhost:5173"
 
@@ -28,7 +28,8 @@ const placeOrder = async (req, res) => {
               product_data: {
                 name: item.name
               },
-              unit_amount: item.price*100*80
+              // unit_amount: item.price*100*80
+                unit_amount: item.price*80
             },
             quantity: item.quantity
           }))
@@ -39,7 +40,7 @@ const placeOrder = async (req, res) => {
                 product_data:{
                     name:"Delivery Charge"
                 },
-                unit_amount: 5*100
+                unit_amount: 80
             },
             quantity:1
         })
