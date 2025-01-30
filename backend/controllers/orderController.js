@@ -29,7 +29,7 @@ const placeOrder = async (req, res) => {
                 name: item.name
               },
               // unit_amount: item.price*100*80
-                unit_amount: item.price*100
+                unit_amount: item.price*100*1
             },
             quantity: item.quantity
           }))
@@ -41,7 +41,7 @@ const placeOrder = async (req, res) => {
                     name:"Delivery Charge"
                 },
                 // unit_amount: 5*80*100
-                unit_amount: 5*100
+                unit_amount: 5*100*1
             },
             quantity:1
         })
