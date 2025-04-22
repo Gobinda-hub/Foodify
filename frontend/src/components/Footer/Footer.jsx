@@ -18,21 +18,15 @@ const Footer = () => {
                 <a href="https://www.linkedin.com/in/gobinda-mandal-357159292/"><img src={assets.linkedin_icon} alt="" /></a>
             </div>
         </div>
-        <div className="footer-content-center">
-            <h2>COMPANY</h2>
-            <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Delivery</li>
-                <li>Privacy policy</li>
-            </ul>
-        </div>
-        <div className="footer-content-right">
+       <div className="footer-content-right">
             <h2>GET IN TOUCH</h2>
-            <ul>
-                <li>+1-212-456-7890</li>
-                <li>contact@foodify.com</li>
-            </ul>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="2ce53d29-89e4-4a82-8dce-3b653f92110b"></input>
+              <input type="text" name="name" id="name" placeholder="Your Name" required></input>
+              <input type="email" name="email" id="email" placeholder="Your Email" required></input>
+              <textarea name="message" rows="6" id="msg" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2" id="btn" onclick="send()">Submit</button>          
+            </form>
         </div>
       </div>
       <hr />
