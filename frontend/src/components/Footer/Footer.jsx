@@ -11,9 +11,7 @@ const Footer = () => {
             <img className='logo' src={assets.logo2} alt="" />
             <p>Foodify appears to be an app focused on connecting small restaurants with local food 
               influencers to boost traffic and sales, leveraging AI-driven matchmaking. It aims to help 
-              restaurants, particularly those struggling, find visibility and increase online orders. The app's
-              success is measured by viral posts, social media impressions, and sales increases for its restaurant
-              clients.</p>
+              restaurants, particularly those struggling, find visibility and increase online orders.</p>
             <div className="footer-social-icons">
                 <a href="https://www.facebook.com/profile.php?id=61550841212971"><img src={assets.facebook_icon} alt="" /></a>
                 <a href="https://x.com/GobindaMan17679"><img src={assets.twitter_icon} alt="" /></a>
