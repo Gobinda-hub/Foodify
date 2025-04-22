@@ -9,7 +9,11 @@ const Footer = () => {
         <div className="footer-content-left">
             {/* <img src={assets.logo} alt="" /> */}
             <img className='logo' src={assets.logo2} alt="" />
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Foodify appears to be an app focused on connecting small restaurants with local food 
+              influencers to boost traffic and sales, leveraging AI-driven matchmaking. It aims to help 
+              restaurants, particularly those struggling, find visibility and increase online orders. The app's
+              success is measured by viral posts, social media impressions, and sales increases for its restaurant
+              clients.</p>
             <div className="footer-social-icons">
                 <a href="https://www.facebook.com/profile.php?id=61550841212971"><img src={assets.facebook_icon} alt="" /></a>
                 <a href="https://x.com/GobindaMan17679"><img src={assets.twitter_icon} alt="" /></a>
