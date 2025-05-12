@@ -33,6 +33,10 @@ const PlaceOrder = () => {
 
     const placeOrder = async (e) => {
         e.preventDefault()
+        if (!/^\d{10}$/.test(data.phone)) {
+            toast.error("Phone number must be exactly 10 digits");
+            return;
+        }
         let orderItems = [];
         food_list.map(((item) => {
             if (cartItems[item._id] > 0) {
